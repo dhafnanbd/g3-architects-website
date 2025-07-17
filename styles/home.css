@@ -52,7 +52,6 @@
 .maximum-width {
     max-width: 1200px;
     margin: 0 auto;
-    /* padding: 0 10px; */
 }
 
 /* Header Styles */
@@ -62,7 +61,7 @@
 .navbar {
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0;
+    padding: 25px 0;
 }
 
 .brand {
@@ -163,6 +162,21 @@
 
 /* Responsive Design */
 @media screen and (max-width:576px) {
+    /* common styles */
+    .edge-padding{
+        padding: 0 5px;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    /* Header */
+    header{
+        padding-bottom: 30px;
+    }
+
+    /* navbar */
     .menu {
         display: none;
     }
@@ -180,5 +194,24 @@
         justify-content: space-between;
         align-items: center;
         padding: 15px 10px;
+    }
+
+    /* banner */
+    .banner-title {
+        margin-top: 30px;
+        font-size: 2.5rem;
+    }
+
+    .banner-description{
+        padding: 25px 0;
+    }
+
+    .btn-primary{
+        padding: 10px 15px;
+        font-size: 1.15rem;
+    }
+
+    .banner img{
+        margin-top: 30px;
     }
 }
