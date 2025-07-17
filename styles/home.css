@@ -8,6 +8,10 @@
   font-style: normal;
 }
 
+*{
+    margin: 0;
+}
+
 /* Shared Styles */
 .display-flex{
     display: flex;
@@ -25,6 +29,22 @@
     background-color: rgba(255, 144, 14, 0.1);
 }
 
+.btn-primary{
+    padding: 21px 24px 20px 25px;
+    background-color: #FF900E;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+.btn-primary:hover{
+    background-color: #da7400;
+    transition: 0.4s;
+}
+
 .maximum-width{
     max-width: 1440px;
     margin: 0 auto;
@@ -37,6 +57,12 @@
 .navbar{
     justify-content: space-between;
     align-items: center;
+    padding: 50px 0;
+}
+
+.brand{
+    font-size: 2.813rem;
+    font-weight: 700;
 }
 
 .menu{
@@ -50,4 +76,38 @@
 
 .menu-item a{
     text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Banner Styling */
+.banner{
+    padding: 50px 0;
+}
+
+.banner-content{
+    max-width: 861px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-title{
+    font-size: 3.75rem;
+    font-weight: 700;
+}
+
+.banner-description{
+    padding: 25px 0 40px;
+    font-size: 1rem;
+}
+
+.banner img{
+    border-radius: 8px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media screen and (max-width:567px) {
+    
 }
