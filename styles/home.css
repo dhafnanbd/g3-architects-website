@@ -2,34 +2,38 @@
 
 
 .work-sans-font {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
-*{
+* {
     margin: 0;
 }
 
 /* Shared Styles */
-.display-flex{
+.display-flex {
     display: flex;
 }
 
-.text-gray{
+.text-gray {
     color: #424242;
 }
 
-.text-light-gray{
+.text-light-gray {
     color: #727272;
 }
 
-.bg-light{
+.acent-color {
+    color: #FF900E;
+}
+
+.bg-light {
     background-color: rgba(255, 144, 14, 0.1);
 }
 
-.btn-primary{
+.btn-primary {
     padding: 21px 24px 20px 25px;
     background-color: #FF900E;
     color: white;
@@ -40,74 +44,141 @@
     transition: 0.4s;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: #da7400;
     transition: 0.4s;
 }
 
-.maximum-width{
-    max-width: 1440px;
+.maximum-width {
+    max-width: 1200px;
     margin: 0 auto;
+    /* padding: 0 10px; */
 }
 
 /* Header Styles */
 
 
 /* Navbar Styles */
-.navbar{
+.navbar {
     justify-content: space-between;
     align-items: center;
     padding: 50px 0;
 }
 
-.brand{
+.brand {
     font-size: 2.813rem;
     font-weight: 700;
 }
 
-.menu{
+.menu {
     align-items: center;
     gap: 20px;
 }
 
-.menu li{
+.menu li {
     list-style: none;
 }
 
-.menu-item a{
+.burger-menu {
+    max-width: 2.5rem;
+    border-radius: 5px;
+    display: none;
+}
+
+.menu-item a {
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
+    transition: 1s;
+}
+
+.menu-item a:hover {
+    text-decoration: underline;
+    transition: 1s;
 }
 
 /* Banner Styling */
-.banner{
+.banner {
     padding: 50px 0;
 }
 
-.banner-content{
+.banner-content {
     max-width: 861px;
     margin: 0 auto;
     text-align: center;
 }
 
-.banner-title{
+.banner-title {
     font-size: 3.75rem;
     font-weight: 700;
 }
 
-.banner-description{
+.banner-description {
     padding: 25px 0 40px;
     font-size: 1rem;
 }
 
-.banner img{
+.banner img {
     border-radius: 8px;
     margin-top: 50px;
     width: 100%;
 }
 
+/* Team Section Styles */
+.team-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 75px;
+    align-items: center;
+    margin: 85px 55px;
+}
+
+.team-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.team-image-container img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.features-container {
+    max-width: 537px;
+}
+
+.features-title {
+    font-size: 3.875rem;
+    font-weight: 700;
+}
+
+.thin-text {
+    font-weight: 400;
+}
+
+.features-description {
+    margin: 24px 0 32px;
+}
+
 /* Responsive Design */
-@media screen and (max-width:567px) {
-    
+@media screen and (max-width:576px) {
+    .menu {
+        display: none;
+    }
+
+    .burger-menu {
+        max-width: 2rem;
+        display: inline;
+    }
+
+    .brand {
+        font-size: 1.75rem;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 10px;
+    }
 }
