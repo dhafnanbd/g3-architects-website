@@ -160,6 +160,81 @@
     margin: 24px 0 32px;
 }
 
+/* Feature Details Section */
+.features-details-section{
+    display: flex;
+    gap: 80px;
+    justify-content: space-between;
+    align-items: top;
+    margin: 50px auto;
+}
+
+.features-details-container{
+    width: 586px;
+}
+
+.features-details-title{
+    font-size: 2.785rem;
+    font-weight: 700;
+    padding-left: 21px;
+    border-left: #FF900E solid 5px;
+}
+
+.features-details-description{
+    margin: 25px 0 30px;
+}
+
+.features-card{
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.featur-card-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.architect-image img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.img-container{
+    max-width: 800px;
+}
+
+.exp-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 45px 0;
+    background-color: #FF900E;
+    border-radius: 8px;
+    color: white;
+    max-width: 342px;
+    position: relative;
+    bottom: 75px;
+    left: -54px;
+}
+
+.architect-image img{
+    width: 100%;
+}
+
+.architect-image h3{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.architect-image p{
+    font-size: 1.563rem;
+}
+
 /* Responsive Design */
 @media screen and (max-width:576px) {
 
