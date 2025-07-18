@@ -432,6 +432,11 @@
         padding: 0 10px;
     }
 
+    .facts-description{
+        width: auto;
+        margin-bottom: 20px;
+    }
+
     .facts-card-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
