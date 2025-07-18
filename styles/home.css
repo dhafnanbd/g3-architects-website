@@ -203,6 +203,10 @@
     margin-bottom: 10px;
 }
 
+.feature-description{
+    color: #727272;
+}
+
 .architect-image img {
     width: 100%;
     border-radius: 8px;
@@ -285,6 +289,10 @@
     font-weight: 600;
 }
 
+.fact-card p{
+    color: #727272;
+}
+
 /* Sponsors Section styles */
 .sponsors-section {
     display: flex;
@@ -317,6 +325,15 @@
 .sponsor-logo-container img:hover {
     filter: saturate(100%);
     transition: 1s;
+}
+
+/* Footer Styles */
+.copyright {
+    padding: 39px 300px 38px;
+    background-color: rgba(255, 244, 231, 1);
+    margin: 90px auto 60px;
+    border-radius: 8px;
+    text-align: center;
 }
 
 /* Responsive Design */
@@ -431,7 +448,22 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: space-between;
-        gap: 25px;
+        gap: 35px;
     }
+
+    .sponsor-logo-container img {
+        max-height: 40px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 0px 10px;
+    }
+
+    .copyright {
+        padding: 15px 25px;
+        margin: 50px auto 50px;
+    }
+
 
 }
